@@ -1,0 +1,374 @@
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+
+body {
+  color: black;
+  font-family: 'Inter', sans-serif;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+h2 {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+h3 {
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+h4 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+a {
+}
+
+
+
+/*
+NAVIGATION
+*/
+
+/* Desktop nav */
+nav {
+  position: fixed;
+  border-right: solid grey 1px;
+  width: 300px;
+  height: 100%;
+}
+.nav-logo {
+  border-bottom: solid gray 1px;
+}
+.nav-logo-container {
+  margin:30px 20px;
+}
+.nav-links {
+  margin-left: 20px;
+}
+.nav-links-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.nav-links-container a {
+  font-size: 1.3rem;
+  color: black;
+  cursor: pointer;
+  margin: 20px 0;
+}
+.nav-links-container a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile nav */
+.mobile-nav {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  border-top: solid grey 1px;
+  height: 100px;
+  z-index: 3;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.mob-nav-item {
+  flex-basis: 80px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin: 6px 20px 0 20px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.mob-nav-image {
+  background-color: black;
+  flex-basis: 48px;
+  width: 48px;
+  margin-bottom: 4px;
+  flex-grow: 0;
+}
+.mob-nav-item p {
+  text-align: center;
+}
+#mob-nav-img-home {
+
+}
+#mob-nav-img-portfolio {
+
+}
+#mob-nav-img-about {
+
+}
+#mob-nav-img-contact {
+
+}
+
+
+/*
+INDEX PAGE
+*/
+main {
+  position: relative;
+  margin-left: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* hero block */
+.main-block-hero {
+  width: 50%;
+  height: 50vh;
+  flex-grow: 1;
+  min-width: 450px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+}
+#block-one {
+  background: url('../images/myface.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-color: #000;
+}
+.main-block-text {
+  color: white;
+  flex-basis: 250px;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+#block-one:hover .main-block-text {
+  transform: scale(1.02);
+  transform-origin: left;
+}
+.main-block-text h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: -20px;
+  margin-left: -6px;
+}
+.main-block-text h2 {
+  font-weight: 400;
+}
+.main-block-text p {
+  font-weight: 400;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+
+/* blocks */
+.main-block {
+  width: 50%;
+  height: 50vh;
+  flex-grow: 1;
+  min-width: 450px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  cursor: pointer;
+}
+.block-tag p {
+  padding: 6px 10px;
+  border: solid black 1px;
+  border-radius: 100px;
+  font-size: 0.6rem;
+  font-weight: 400;
+  margin: 30px 0 10px 0;
+}
+.block-image {
+  width: 80%;
+  height: 100%;
+  margin-top: 20px;
+  transform-origin: bottom;
+  transition: 0.5s;
+}
+
+
+#block-two {
+  background-color: #FFB450;
+}
+#block-image-two {
+  background: url('../images/vardo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+#block-two:hover #block-image-two {
+  transform: scale(1.02);
+}
+
+
+#block-three {
+  background-color: #FCDB39;
+}
+#block-image-three {
+  background: url('../images/alligator.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+#block-three:hover #block-image-three {
+  transform: scale(1.02);
+}
+
+
+#block-four {
+  background-color: #1C6AE4;
+}
+#block-image-four {
+  background: url('../images/portfolio.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+#block-four:hover #block-image-four {
+  transform: scale(1.02);
+}
+
+
+#block-five {
+  background-color: #FAC3D3;
+}
+#block-image-five {
+  background: url('../images/animation.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+#block-five:hover #block-image-five {
+  transform: scale(1.02);
+}
+
+
+#block-six {
+  background-color: #FFF;
+  justify-content: center;
+}
+#block-six .block-tag p {
+  margin: 0 0 10px 0;
+}
+#block-six h2 {
+  transition: 0.5s;
+}
+#block-six:hover h2 {
+  transform: scale(1.02);
+  text-decoration: underline;
+}
+
+
+/*
+PORTOLFIO PAGE
+*/
+.portfolio-block {
+  display: flex;
+  flex-grow: 1;
+  height: 50vh;
+  width: 100%;
+  cursor: pointer;
+}
+.portfolio-block:hover .portfolio-image{
+  transform: scale(1.02);
+}
+.portfolio-image {
+  background-color: black;
+  flex-basis: 50%;
+  transform-origin: bottom;
+  transition: 0.5s;
+}
+.portfolio-text {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.portfolio-img-left {
+  /*text-align: right;*/
+}
+.portfolio-img-right {
+
+}
+.portfolio-text .block-tag p {
+  display: inline;
+}
+.portfolio-text .block-tag {
+  margin: 0 0 15px 0;
+}
+.portfolio-text h3 {
+  margin-bottom: 15px;
+}
+.portfolio-text p {
+  margin-bottom: 15px;
+}
+
+/* Portofolio page tiles */
+#portfolio-vardo {
+  background-color: #FFB450;
+}
+#vardo-image {
+  background: url('../images/vardo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+#portfolio-portfolio {
+  background-color: #1C6AE4;
+}
+#portfolio-image {
+  background: url('../images/portfolio.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+
+
+/*
+RESPONSIVE SCREENS
+*/
+
+/* Portfolio page realigning blocks */
+@media only screen and (max-width: 1200px) {
+  .portfolio-block {
+    flex-direction: column;
+    text-align: center;
+  }
+  .portfolio-img-left .portfolio-text {
+    order: 1;
+  }
+  .portfolio-img-left .portfolio-image {
+    order: 2;
+  }
+  .portfolio-text p {
+    display: none;
+  }
+  .view-more {
+    display: inline !important;
+  }
+}
+
+/* Responsive nav */
+@media only screen and (max-width: 840px) {
+  nav {
+    display: none;
+  }
+  main {
+    margin-left: 0;
+    margin-bottom: 100px;
+  }
+  .mobile-nav {
+    display: flex;
+  }
+}
