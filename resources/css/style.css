@@ -4,7 +4,7 @@
 
 
 body {
-  color: black;
+  color: #191a1a;
   font-family: 'Inter', sans-serif;
 }
 h1 {
@@ -35,12 +35,14 @@ NAVIGATION
 /* Desktop nav */
 nav {
   position: fixed;
-  border-right: solid grey 1px;
+  border-right: solid #191a1a 2px;
   width: 300px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .nav-logo {
-  border-bottom: solid gray 1px;
+  border-bottom: solid #191a1a 2px;
 }
 .nav-logo-container {
   margin:30px 20px;
@@ -49,18 +51,47 @@ nav {
   margin-left: 20px;
 }
 .nav-links-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 .nav-links-container a {
   font-size: 1.3rem;
-  color: black;
+  color: #191a1a;
   cursor: pointer;
   margin: 20px 0;
 }
 .nav-links-container a:hover {
   text-decoration: underline;
+}
+/* Dark mode button */
+.dark-mode-container {
+  margin-left: 20px;
+  margin-top: auto;
+}
+.dark-mode-toggle {
+  width: 40px;
+  height: 20px;
+  background-color: #191a1a;
+  border-radius: 25px;
+  border: solid #191a1a 2px;
+  cursor: pointer;
+}
+.dm-btn {
+  height: 20px;
+  width: 20px;
+  border-radius: 25px;
+  background-color: #FFF;
+  border: solid #191a1a 2px;
+  position: relative;
+  top: -2px;
+  left: -2px;
+  transition: 0.2s;
+}
+/* Bottom of nav */
+.nav-bottom-container {
+  font-size: 0.8rem;
+  margin: 40px 0;
 }
 
 /* Mobile nav */
@@ -68,8 +99,8 @@ nav {
   width: 100%;
   position: fixed;
   bottom: 0;
-  background-color: white;
-  border-top: solid grey 1px;
+  background-color: #FFF;
+  border-top: solid #191a1a 2px;
   height: 100px;
   z-index: 3;
   display: none;
@@ -81,7 +112,7 @@ nav {
   flex-basis: 80px;
   flex-grow: 1;
   flex-shrink: 0;
-  margin: 6px 20px 0 20px;
+  margin: 16px 20px 0 20px;
   height: 80px;
   display: flex;
   flex-direction: column;
@@ -89,9 +120,9 @@ nav {
   cursor: pointer;
 }
 .mob-nav-image {
-  background-color: black;
-  flex-basis: 48px;
-  width: 48px;
+  background-color: #191a1a;
+  flex-basis: 40px;
+  width: 40px;
   margin-bottom: 4px;
   flex-grow: 0;
 }
@@ -99,16 +130,28 @@ nav {
   text-align: center;
 }
 #mob-nav-img-home {
-
+  background: url('../images/home.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 #mob-nav-img-portfolio {
-
+  background: url('../images/coffee.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 #mob-nav-img-about {
-
+  background: url('../images/feather.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 #mob-nav-img-contact {
-
+  background: url('../images/mail.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 
@@ -133,14 +176,14 @@ main {
   align-items: center;
 }
 #block-one {
-  background: url('../images/myFace.jpg');
+  background: url('../images/myface.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
   background-color: #000;
 }
 .main-block-text {
-  color: white;
+  color: #FFF;
   flex-basis: 250px;
   margin-left: 40px;
   transition: 0.5s;
@@ -181,7 +224,7 @@ main {
 }
 .block-tag p {
   padding: 6px 10px;
-  border: solid black 1px;
+  border: solid #191a1a 1px;
   border-radius: 100px;
   font-size: 0.6rem;
   font-weight: 400;
@@ -282,8 +325,9 @@ PORTOLFIO PAGE
   transform: scale(1.02);
 }
 .portfolio-image {
-  background-color: black;
-  flex-basis: 50%;
+  /*background-color: black;*/
+  flex-basis: 45%;
+  margin: 0 2.5%;
   transform-origin: bottom;
   transition: 0.5s;
 }
@@ -335,6 +379,24 @@ PORTOLFIO PAGE
 
 
 
+/* PORTFOLIO SUB PAGES */
+.p-container {
+  width: 100%;
+  margin: 0 40px;
+  border: solid red 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.p-container .block-tag p {
+  display: inline;
+}
+.p-container .block-tag {
+  margin: 0 0 15px 0;
+}
+
+
 /*
 RESPONSIVE SCREENS
 */
@@ -345,19 +407,28 @@ RESPONSIVE SCREENS
     flex-direction: column;
     text-align: center;
   }
+  .portfolio-image {
+    flex-basis: 50%;
+  }
   .portfolio-img-left .portfolio-text {
     order: 1;
   }
   .portfolio-img-left .portfolio-image {
     order: 2;
   }
+  .portfolio-text {
+    padding: 40px 40px 0 40px;
+  }
   .portfolio-text p {
     display: none;
   }
   .view-more {
     display: inline !important;
+    margin: 0px;
   }
 }
+
+
 
 /* Responsive nav */
 @media only screen and (max-width: 840px) {
