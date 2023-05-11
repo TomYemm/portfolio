@@ -5,16 +5,16 @@ let mobNavAbout = document.getElementById('mob-nav-about');
 let mobNavContact = document.getElementById('mob-nav-contact');
 //redirects
 mobNavHome.onclick = () => {
-  location.href = '/index.html';
+  location.href = '/portfolio/index.html';
 }
 mobNavPortfolio.onclick = () => {
-  location.href = '/portfolio.html';
+  location.href = '/portfolio/portfolio.html';
 }
 mobNavAbout.onclick = () => {
-  location.href = '/about.html';
+  location.href = '/portfolio/about.html';
 }
 mobNavContact.onclick = () => {
-  location.href = '/contact.html';
+  location.href = '/portfolio/contact.html';
 }
 
 //DARK MODE
