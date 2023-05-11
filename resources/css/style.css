@@ -382,8 +382,7 @@ PORTOLFIO PAGE
 /* PORTFOLIO SUB PAGES */
 .p-container {
   width: 100%;
-  margin: 0 40px;
-  border: solid red 1px;
+  margin: 0 12%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -394,6 +393,9 @@ PORTOLFIO PAGE
 }
 .p-container .block-tag {
   margin: 0 0 15px 0;
+}
+.p-title {
+  margin-top: 80px;
 }
 
 
