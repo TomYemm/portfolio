@@ -22,6 +22,8 @@ const dmToggle = document.getElementById('dmtoggle');
 const dmBtn = document.getElementsByClassName('dm-btn');
 const change = document.getElementsByClassName('dark-mode');
 
+let w = window.innerWidth;
+
 function makeDark() {
   for (let i = 0; i < change.length; i++) {
     change[i].style.backgroundColor = "#191a1a";
@@ -61,6 +63,10 @@ dmToggle.onclick = () => {
     makeLight();
     localStorage.setItem('status', 'light');
   }
+}
+
+if (w < 850) {
+  makeLight();
 }
 
 
