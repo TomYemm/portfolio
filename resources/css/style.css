@@ -176,7 +176,7 @@ main {
   align-items: center;
 }
 #block-one {
-  background: url('../images/myface.jpg');
+  background: url('../images/myFace.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
