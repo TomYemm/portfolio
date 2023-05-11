@@ -336,6 +336,7 @@ PORTOLFIO PAGE
   display: flex;
   flex-direction: column;
   padding: 40px;
+  align-self: center;
 }
 .portfolio-img-left {
   /*text-align: right;*/
