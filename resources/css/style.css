@@ -186,7 +186,7 @@ main {
   color: #FFF;
   flex-basis: 250px;
   margin-left: 40px;
-  transition: scale 0.5s;
+  transition: 0.5s;
 }
 #block-one:hover .main-block-text {
   transform: scale(1.02);
