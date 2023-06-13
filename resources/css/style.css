@@ -379,20 +379,20 @@ PORTOLFIO PAGE
 }
 
 #portfolio-sketchy {
-  background-color: #1C6AE4;
+  background-color: #FCDB39;
 }
 #sketchy-image {
-  background: url('../images/portfolio.png');
+  background: url('../images/alligator.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
 }
 
 #portfolio-animation {
-  background-color: #1C6AE4;
+  background-color: #FAC3D3;
 }
 #animation-image {
-  background: url('../images/portfolio.png');
+  background: url('../images/animation.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
