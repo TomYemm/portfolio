@@ -378,6 +378,26 @@ PORTOLFIO PAGE
   background-position: bottom;
 }
 
+#portfolio-sketchy {
+  background-color: #1C6AE4;
+}
+#sketchy-image {
+  background: url('../images/portfolio.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+#portfolio-animation {
+  background-color: #1C6AE4;
+}
+#animation-image {
+  background: url('../images/portfolio.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
 
 
 /* PORTFOLIO SUB PAGES */
