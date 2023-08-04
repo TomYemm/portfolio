@@ -24,6 +24,7 @@ h4 {
   font-size: 1.2rem;
 }
 a {
+  color: #191a1a;
 }
 
 
@@ -171,7 +172,7 @@ main {
   height: 50vh;
   flex-grow: 1;
   min-width: 450px;
-  transition: scale 0.5s;
+  transition: 0.5s;
   display: flex;
   align-items: center;
 }
@@ -329,7 +330,7 @@ PORTOLFIO PAGE
   flex-basis: 45%;
   margin: 0 2.5%;
   transform-origin: bottom;
-  transition: 0.5s;
+  transition: scale 0.5s;
 }
 .portfolio-text {
   flex-basis: 50%;
@@ -337,12 +338,6 @@ PORTOLFIO PAGE
   flex-direction: column;
   padding: 40px;
   align-self: center;
-}
-.portfolio-img-left {
-  /*text-align: right;*/
-}
-.portfolio-img-right {
-
 }
 .portfolio-text .block-tag p {
   display: inline;
@@ -368,16 +363,6 @@ PORTOLFIO PAGE
   background-position: bottom;
 }
 
-#portfolio-portfolio {
-  background-color: #1C6AE4;
-}
-#portfolio-image {
-  background: url('../images/portfolio.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-}
-
 #portfolio-sketchy {
   background-color: #FCDB39;
 }
@@ -388,14 +373,64 @@ PORTOLFIO PAGE
   background-position: bottom;
 }
 
-#portfolio-animation {
+#portfolio-portfolio {
+  background-color: #1C6AE4;
+}
+#portfolio-image {
+  background: url('../images/portfolio.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+#portfolio-game {
   background-color: #FAC3D3;
 }
-#animation-image {
+#game-image {
   background: url('../images/animation.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
+}
+
+#portfolio-phorest {
+  background-color: #FFB450;
+}
+#phorest-image {
+  background: url('../images/phorest.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+#portfolio-scaleon {
+  background-color: #FCDB39;
+}
+#scaleon-image {
+  background: url('../images/scaleon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#portfolio-logo {
+  background-color: #1C6AE4;
+}
+#logo-image {
+  background: url('../images/logochallenge.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+#portfolio-cloudscan {
+  background-color: #FAC3D3;
+}
+#cloudscan-image {
+  background: url('../images/cloudscan.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 
@@ -428,11 +463,16 @@ PORTOLFIO PAGE
   font-weight: 400;
 }
 .p-container a {
-  color: #FFB450 !important;
+  color: #FFB450;
   text-decoration: underline;
 }
 .p-container img {
-  width: 50%;
+  width: 75%;
+  margin: 60px 0 60px 0;
+  border: 1px solid black;
+  border-bottom: 4px solid black;
+}
+.p-container video {
   margin: 60px 0 60px 0;
   border: 1px solid black;
   border-bottom: 4px solid black;
@@ -469,9 +509,10 @@ RESPONSIVE SCREENS
     display: inline !important;
     margin: 0px;
   }
+  .portfolio-image {
+
+  }
 }
-
-
 
 /* Responsive nav */
 @media only screen and (max-width: 840px) {
