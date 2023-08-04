@@ -1,27 +1,9 @@
-// MOBILE NAV BUTTONS
-let mobNavHome = document.getElementById('mob-nav-home');
-let mobNavPortfolio = document.getElementById('mob-nav-portfolio');
-let mobNavAbout = document.getElementById('mob-nav-about');
-let mobNavContact = document.getElementById('mob-nav-contact');
-//redirects
-mobNavHome.onclick = () => {
-  location.href = '/portfolio/index.html';
-}
-mobNavPortfolio.onclick = () => {
-  location.href = '/portfolio/portfolio.html';
-}
-mobNavAbout.onclick = () => {
-  location.href = '/portfolio/about.html';
-}
-mobNavContact.onclick = () => {
-  location.href = '/portfolio/contact.html';
-}
-
 //DARK MODE
 const dmToggle = document.getElementById('dmtoggle');
 const dmBtn = document.getElementsByClassName('dm-btn');
 const change = document.getElementsByClassName('dark-mode');
 
+const mobNavImgHome = document.getElementById('mob-nav-img-home');
 let w = window.innerWidth;
 
 function makeDark() {
@@ -67,12 +49,4 @@ dmToggle.onclick = () => {
 
 if (w < 850) {
   makeLight();
-}
-
-
-//Portfolio page redirects
-let pVardo = document.getElementsByClassName('portfolio-vardo');
-//redirects
-pVardo[0].onclick = () => {
-  location.href = './portfolio/vardo.html';
 }
